@@ -1,0 +1,15 @@
+language: php
+
+dist: bionic
+
+php:
+  - 7.4
+
+before_install:
+  - composer self-update
+
+install:
+  - composer global require --dev phpstan/phpstan
+
+script:
+  - composer global exec phpstan -v
