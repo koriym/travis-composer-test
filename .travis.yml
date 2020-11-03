@@ -13,3 +13,4 @@ install:
 
 script:
   - composer global exec phpstan -v
+  - ~/.composer/vendor/bin/phpstan -v
